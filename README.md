@@ -32,3 +32,8 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+If we only visit each node once and check the edges then the worst case we would need to visit every node and check every edge before we find the augmenting path. So the time complexity would be T(n) E O(V +E).
+
+copilot helped me with the .push([]) functions so that it adds teh array instead of just the single item.
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
