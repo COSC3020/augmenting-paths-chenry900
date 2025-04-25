@@ -21,7 +21,7 @@ function augmentingPath(graph, start, end) {
                 if (visited.includes(node) == false) {
                     visited.push(node);
                     for (var x in graph[node]) {
-                        if (fraph[node][x] > 0 && visited.includes(x) == false) {
+                        if (visited.includes(x) == false) {
                             stack.push(augPath.concat([x]))
                         }
                     }
