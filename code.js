@@ -20,11 +20,9 @@ function augmentingPath(graph, start, end) {
             else {
                 if (visited.includes(node) == false) {
                     visited.push(node);
-                    if(graph[node] != undefined) {
-                        for (var x of graph[node]) {
-                            if (fraph[node][x] > 0 && visited.includes(x) == false) {
-                                stack.push(augPath.concat([x]))
-                            }
+                    for (var x in graph[node]) {
+                        if (fraph[node][x] > 0 && visited.includes(x) == false) {
+                            stack.push(augPath.concat([x]))
                         }
                     }
                 }
